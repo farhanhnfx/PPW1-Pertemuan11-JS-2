@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript 2</title>
+    <script>
+        var name = "PPW1 - Belajar JavaScript";
+        var visitorCount = 483732;
+        var isActive = true;
+        var url = "https://github.com/farhanhnfx";
+
+        alert("Selamat datang di " + name + "!");
+        document.write("Nama situs : " + name);
+        document.write("<br>Jumlah pengunjung : " + visitorCount);
+        document.write("<br>Status aktif : " + isActive);
+        document.write("<br>Alamat URL : " + url);
+        
+        name += " - test";
+        visitorCount = 832482374;
+        isActive = false;
+        url = "https://ugm.ac.id";
+
+        alert("Selamat datang di " + name + "!");
+        document.write("<br><hr><b>Ganti nilai variabel</b><br>Nama situs : " + name);
+        document.write("<br>Jumlah pengunjung : " + visitorCount);
+        document.write("<br>Status aktif : " + isActive);
+        document.write("<br>Alamat URL : " + url);
+
+        console.log(typeof name);
+        console.log(typeof visitorCount);
+        console.log(typeof isActive);
+
+        let isExit = confirm("Apakah Anda yakin ingin keluar?");
+        var nama = prompt("Siapa namamu?");
+        alert("Hai " + nama + "!");
+    </script>
+</head>
+<body>
+    <script>
+        var aku = 20;
+        let kamu = 19;
+        
+        var hasil = aku == kamu;
+        document.write(`<br><hr>${aku} == ${kamu} = ${hasil}<br>`);
+        hasil = aku > kamu;
+        document.write(`${aku} > ${kamu} = ${hasil}<br>`);
+        hasil = aku >= kamu;
+        document.write(`${aku} >= ${kamu} = ${hasil}<br>`);
+        hasil = aku < kamu;
+        document.write(`${aku} < ${kamu} = ${hasil}<br>`);
+        hasil = aku <= kamu;
+        document.write(`${aku} <= ${kamu} = ${hasil}<br>`);
+        hasil = aku != kamu;
+        document.write(`${aku} != ${kamu} = ${hasil}<br>`);
+    </script>
+    <hr>
+    <script>
+        document.write(`<br>Membandingkan nilai dari 4 dan "4" : ${4 == "4"}`);
+        document.write(`<br>Membandingkan nilai serta tipe data dari 4 dan "4" : ${4 === "4"}`);
+    </script>
+    <script>
+        var benar = aku > kamu;
+        var salah = aku < kamu;
+
+        hasil = benar && salah;
+        document.write(`<br><br>${benar} && ${salah} = ${hasil}<br>`);
+        hasil = benar || salah;
+        document.write(`${benar} || ${salah} = ${hasil}<br>`);
+        hasil = !benar;
+        document.write(`!${benar} = ${hasil}<br>`);
+    </script>
+    <hr>
+    <b>Operator Bitwise</b>
+    <script>
+        var x = 4;
+        var y = 3;
+        
+        var res = x & y;
+        document.write(`<br>${x} & ${y} = ${res}<br>`)
+        res = x | y;
+        document.write(`${x} | ${y} = ${res}<br>`)
+        res = x ^ y;
+        document.write(`${x} ^ ${y} = ${res}<br>`)
+        res = ~x;
+        document.write(`~${x} = ${res}<br>`)
+        res = x >> y;
+        document.write(`${x} >> ${y} = ${res}<br>`)
+        res = x << y;
+        document.write(`${x} << ${y} = ${res}<br>`)
+        res = x >>> y;
+        document.write(`${x} >>> ${y} = ${res}<br>`)
+    </script>
+    <hr>
+    <b>Ternary</b><br>
+    <script>
+        var isOlderThan18 = confirm("Apakah kamu berumur di atas 50 tahun?");
+        var result = isOlderThan18 ? "Selamat datang!" : "Dilarang masuk!";
+        document.write(result);
+    </script>
+</body>
+</html>
